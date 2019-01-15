@@ -18,3 +18,8 @@
 * [杂谈：前端Web通信](https://github.com/ZengLingYong/blog/issues/15)
 * [杂谈：渐进增强与优雅降级](https://github.com/ZengLingYong/blog/issues/14)
 * [Vim 利剑常磨，见血封喉](https://github.com/ZengLingYong/blog/issues/12)
+
+#### 有问题来撩
+* [segmentfault: 以乐之名](https://segmentfault.com/u/yilezhiming)
+* [简书: 以乐之名](https://www.jianshu.com/u/052cec4cf325)
+* [个人Blog: Kenz's Blog](http://wuliv.com)
