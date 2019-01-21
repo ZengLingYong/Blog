@@ -11,6 +11,7 @@
 * [前端进击的巨人（一）：执行上下文与执行栈，变量对象](https://github.com/ZengLingYong/blog/issues/1)
 * [前端进击的巨人（二）：栈、堆、队列、内存空间](https://github.com/ZengLingYong/blog/issues/2)
 * [前端进击的巨人（三）：从作用域走进闭包](https://github.com/ZengLingYong/Blog/issues/16)
+* [前端进击的巨人（三）：略知函数式编程](https://github.com/ZengLingYong/Blog/issues/17)
 
 #### 读书笔记系列
 * [读书笔记(01) - JSON - JavaScript高级程序设计](https://github.com/ZengLingYong/blog/issues/3)
