@@ -14,6 +14,7 @@
 * [前端进击的巨人（四）：略知函数式编程](https://github.com/ZengLingYong/Blog/issues/17)
 * [前端进击的巨人（五）：学会函数柯里化（curry) ](https://github.com/ZengLingYong/Blog/issues/18)
 * [前端进击的巨人（六）：知否知否，须知this](https://github.com/ZengLingYong/Blog/issues/19)
+* [前端进击的巨人（七）：走进面向对象，原型与原型链，继承方式](https://github.com/ZengLingYong/Blog/issues/20)
 
 
 #### 读书笔记系列
