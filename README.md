@@ -15,7 +15,7 @@
 * [前端进击的巨人（五）：学会函数柯里化（curry) ](https://github.com/ZengLingYong/Blog/issues/18)
 * [前端进击的巨人（六）：知否知否，须知this](https://github.com/ZengLingYong/Blog/issues/19)
 * [前端进击的巨人（七）：走进面向对象，原型与原型链，继承方式](https://github.com/ZengLingYong/Blog/issues/20)
-
+* [前端进击的巨人（八）：浅谈函数防抖与节流](https://github.com/ZengLingYong/Blog/issues/21)
 
 #### 读书笔记系列
 * [读书笔记(01) - JSON - JavaScript高级程序设计](https://github.com/ZengLingYong/blog/issues/3)
