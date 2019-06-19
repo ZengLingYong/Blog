@@ -5,6 +5,8 @@
 
 文章阅过觉得不错，右上角动动手指，Star Star Star！！！
 
+最新在整理设计模式系列，敬请期待。
+
 ***
 
 #### 前端进击的巨人系列
@@ -16,6 +18,10 @@
 * [前端进击的巨人（六）：知否知否，须知this](https://github.com/ZengLingYong/Blog/issues/19)
 * [前端进击的巨人（七）：走进面向对象，原型与原型链，继承方式](https://github.com/ZengLingYong/Blog/issues/20)
 * [前端进击的巨人（八）：浅谈函数防抖与节流](https://github.com/ZengLingYong/Blog/issues/21)
+
+#### JavaScript设计模式系列
+* [JavaScript设计模式（一）：单例模式](https://github.com/ZengLingYong/Blog/issues/22)
+* 马不停蹄地更新中。。。
 
 #### 读书笔记系列
 * [读书笔记(01) - JSON - JavaScript高级程序设计](https://github.com/ZengLingYong/blog/issues/3)
