@@ -20,7 +20,9 @@
 * [前端进击的巨人（八）：浅谈函数防抖与节流](https://github.com/ZengLingYong/Blog/issues/21)
 
 #### JavaScript设计模式系列
-* [JavaScript设计模式（一）：单例模式](https://github.com/ZengLingYong/Blog/issues/22)
+* [JavaScript 设计模式（一）：单例模式](https://github.com/ZengLingYong/Blog/issues/22)
+* [JavaScript 设计模式（二）：策略模式](https://github.com/ZengLingYong/Blog/issues/23)
+
 * 马不停蹄地更新中。。。
 
 #### 读书笔记系列
