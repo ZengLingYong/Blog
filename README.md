@@ -22,6 +22,7 @@
 #### JavaScript设计模式系列
 * [JavaScript 设计模式（一）：单例模式](https://github.com/ZengLingYong/Blog/issues/22)
 * [JavaScript 设计模式（二）：策略模式](https://github.com/ZengLingYong/Blog/issues/23)
+* [JavaScript 设计模式（三）：代理模式](https://github.com/ZengLingYong/Blog/issues/24)
 * 马不停蹄地更新中。。。
 
 #### 读书笔记系列
