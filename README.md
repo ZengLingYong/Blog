@@ -26,6 +26,7 @@
 * [JavaScript 设计模式（四）：适配器模式](https://github.com/ZengLingYong/Blog/issues/25)
 * [JavaScript 设计模式（五）：迭代器模式](https://github.com/ZengLingYong/Blog/issues/26)
 * [JavaScript 设计模式（六）：观察者模式与发布订阅模式](https://github.com/ZengLingYong/Blog/issues/27)
+* [JavaScript 设计模式（七）：命令模式](https://github.com/ZengLingYong/Blog/issues/28)
 * 马不停蹄地更新中。。。
 
 #### 读书笔记系列
