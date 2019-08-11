@@ -18,7 +18,7 @@
 * [前端进击的巨人（六）：知否知否，须知this](https://github.com/ZengLingYong/Blog/issues/19)
 * [前端进击的巨人（七）：走进面向对象，原型与原型链，继承方式](https://github.com/ZengLingYong/Blog/issues/20)
 * [前端进击的巨人（八）：浅谈函数防抖与节流](https://github.com/ZengLingYong/Blog/issues/21)
-* [日积硅步，apply/call/bind 自我实现](https://github.com/ZengLingYong/Blog/issues/30)
+* [日积跬步，apply/call/bind 自我实现](https://github.com/ZengLingYong/Blog/issues/30)
 
 #### JavaScript设计模式系列
 * [JavaScript 设计模式（一）：单例模式](https://github.com/ZengLingYong/Blog/issues/22)
