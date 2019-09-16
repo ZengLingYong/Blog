@@ -1,7 +1,9 @@
 /**
+ * banner-loader
+ * 功能：向输出文件添加注释内容
  * 包依赖：
- * loader-utils
- * schema-utils 验证 options 参数
+ * 1. loader-utils
+ * 2. schema-utils 验证 options 参数
  */
 
 let loaderUtls = require('loader-utils');

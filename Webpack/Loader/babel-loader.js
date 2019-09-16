@@ -1,8 +1,10 @@
 /**
+ * babel-loader
+ * 功能：转化 ES6
  * 包依赖：
- * @babel/core 
- * @babel/preset-env
- * loader-utils
+ * 1. @babel/core 
+ * 2. @babel/preset-env
+ * 3. loader-utils
  */
 
 let babel = require('@babel/core');
