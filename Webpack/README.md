@@ -2,12 +2,12 @@
 
 > webpack 自身只处理 js 文件，其它文件格式需使用 loader 来转换为 webpack 能处理的有效文件
 
-### mode 模式，process.env.NODE_ENV 
+## mode 模式
 1. development
 2. production 默认，会开启 UglifyJsPlugin 
 
 
-### loader
+## loader 加载器
 loader 本身是一个函数，用于对模块的源代码进行转换，配置文件中在 module.rules 中配置 loader。
 
 > loader执行顺序：默认从右到左，从下到上，支持链式传递，支持同异步，命名约定为 xxx-loader
@@ -26,14 +26,14 @@ loader 本身是一个函数，用于对模块的源代码进行转换，配置�
 | url-loader | 能限制图片大小转换 base64，超出限制使用 file-loader |
 | html-withimg-loader | 处理 html 中的图片命名，与 file-loader 同步 |
 
-#### loader 类型：
+### loader 类型：
 * 前置 loader `enforce: 'pre'` 优先执行 
 * 后置 loader `enforce: 'post'` 延后执行
 * 普通 loader
 * 内联 loader `expose?$!jquery` 
 * 行内 loader `inline-loader!./a.js`
 
-#### 行内 loader
+### 行内 loader
 1. 默认使用
 ```js
 inline-loader!./a.js
@@ -51,7 +51,7 @@ inline-loader!./a.js
 !!inline-loader!./a.js
 ```
 
-#### loader 组成
+### loader 组成
 1. pitch
 2. normal
 
@@ -72,19 +72,19 @@ loader2.pitch = fn() {
 }
 ```
 
-#### 常用 loader 源码实现
-
-![file-loader](http://img.wuliv.com/1568626062369.png)
+### 常用 loader 源码实现
 
 ![url-loader](http://img.wuliv.com/1568626043156.png)
 
+[查看更多](https://github.com/ZengLingYong/Blog/tree/master/Webpack/Loader)
 
-#### 引用 jQuery
+
+### 引用 jQuery
 * expose-loader 暴露到 window 上
 * webpack.ProvidePlugin 暴露到每个模块
 * 引入打包 exteneral 避免重复打包
 
-### plugin
+## plugin
 plugin 本身是一个具有 `apply` 方法的类，目的在于解决 loader 无法实现的其它问题。
 
 | 常用plugin | 功能 |
@@ -103,9 +103,9 @@ plugin 本身是一个具有 `apply` 方法的类，目的在于解决 loader �
 | BannerPlugin | 向 js 文件 插入注释内容 | 
 | IgnorePlugin | 忽略打包指定引用文件，如屏蔽 moment 全语言包引入 |
 
-### 模块解析
+## 模块解析
 
-#### resolve
+### resolve
 
 resolve 的作用：
 1. 处理模块查找位置
@@ -136,7 +136,7 @@ resolve: {
 }
 ```
 
-#### resolveLoader
+### resolveLoader
 作用：处理 loader 查找位置
 
 配置方式：
@@ -154,7 +154,7 @@ resolveLoader: {
 }
 ```
 
-### devtool 的 sourceMap
+## devtool 的 sourceMap
 | 类型 | 功能 |
 | -- | -- |
 | source-map | 增加映射文件，大而全 |
@@ -163,18 +163,18 @@ resolveLoader: {
 | cheap-module-eval-source-map | 无单独文件，有行无列 |
 
 
-### 前后端接口调试
+## 前后端接口调试
 1. 代理 proxy
 2. mock数据 before(app) {...}
 3. 中间件共享端口 webpack-dev-middleware
 
-### webpack 优化
+## webpack 优化
 
-#### webpack 内置优化
+### webpack 内置优化
 * tree-shaking 
 * scope hosting 作用域提升
 
-#### 生产环境代码压缩
+### 生产环境代码压缩
 ```js
 // 处理 js/css 压缩
 optimization: {
@@ -189,10 +189,10 @@ optimization: {
 },
 ```
 
-#### 抽取公共代码（多页面）
+### 抽取公共代码（多页面）
 optimization splitChunks
 
-#### 其它优化方案
+### 其它优化方案
 * noParse 不去解析包的依赖
 * exclude 排除处理文件
 * IgnorePlugin 忽略打包指定文件，如语言包
@@ -200,12 +200,12 @@ optimization splitChunks
 * happypack 多线程打包
 
 
-#### 热更新 
+### 热更新 
 * NamedModulesPlugin 热更新模块路径
 * HotModuleReplacementPlugin 热更新插件
 
 
-### webpack 事件机制
+## webpack 事件机制
 
 Webpack 事件流机制核心：Tapable，类似 NodeJs 的 events 库，原理是 "发布订阅模式"
 
@@ -238,8 +238,10 @@ const {
 * Sync 同步钩子使用 `tap/call`
 * Async 异步钩子使用 `tapAsync/callAsync` 和 `tapPromie/promise`
 
+[源码实现](https://github.com/ZengLingYong/Blog/tree/master/Webpack/Tabable)
 
-### 待整理
+
+## 待整理
 ```js
 // postcss.config.js
 module.exports = {
@@ -256,3 +258,26 @@ last 2 versions
 
 * webpack.DefinePlugin 定义环境遍历
 * webpack-merge 区分打包环境
+
+
+webpack-dev-middleware 集成在 webpack-dev-server，也可单独使用
+
+```js
+// webpack-dev-middleware 搭建服务器
+const express = require('express');
+const webpack = require('webpack');
+
+const webpackDevMiddle = require('webpack-dev-middleware');
+
+const app = express();
+const config = require('./webpack.config.js');
+const compiler = webpack(config);
+
+app.use(webpackDevMiddle(compiler, {
+  publicPath: config.output.publicPath
+}))
+
+app.listen(4444, function() {
+  console.log('Example app listening on port 3000!\n');
+})
+```
