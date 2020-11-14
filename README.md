@@ -48,6 +48,20 @@
 * [杂谈：渐进增强与优雅降级](https://github.com/ZengLingYong/blog/issues/14)
 * [Vim 利剑常磨，见血封喉](https://github.com/ZengLingYong/blog/issues/12)
 
+#### 更新计划
+- [ ] 深浅拷贝
+- [ ] Promise
+- [ ] 生成器迭代器
+- [ ] 函数式编程（函数组合/函数柯里化）
+- [ ] 事件循环机制
+- [ ] 渲染机制（URL 输入开始）
+- [ ] 强缓存/协商缓存
+- [ ] 垃圾回收机制
+- [ ] HTTP 与 HTTPS
+- [ ] Vue 源码系列
+- [ ] CSS 系列
+
+
 #### 有问题来撩
 * [segmentfault: 以乐之名](https://segmentfault.com/u/yilezhiming)
 * [简书: 以乐之名](https://www.jianshu.com/u/052cec4cf325)
