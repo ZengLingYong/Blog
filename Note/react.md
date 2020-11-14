@@ -84,7 +84,7 @@ this.setState((prevState, props) => {
   * React.lazy
   * React.Suspense
 
-HOC VS Render Props
+### HOC VS Render Props
 1. HOC: 模式简单，会增加组件层级
 2. Render Props: 代码简洁，学习成本较高
 
